@@ -23,6 +23,8 @@ keys.forEach(key => {
     })
 });
 
+
+//add the transition to keys
 hints.forEach((elem , index) => {
     elem.style = `transition-delay : ${index * 50}ms`
 });
