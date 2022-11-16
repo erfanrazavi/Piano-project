@@ -1,6 +1,7 @@
+
 let note = document.querySelector('.nowplaying')
 let keys = document.querySelectorAll('.key')
-
+let hints = document.querySelectorAll('.hints')
 
 window.addEventListener('keydown' , function(e){
     const key = document.querySelector(`.key[data-key='${e.keyCode}']`)
@@ -22,3 +23,6 @@ keys.forEach(key => {
     })
 });
 
+hints.forEach((elem , index) => {
+    elem.style = `transition-delay : ${index * 50}ms`
+});
